@@ -1,0 +1,32 @@
+name: cwc_paid
+description: "Course Walk Companion - paid version"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  is_first_run: ^1.0.0
+  cwc_package:
+    path: /Users/macbook/StudioProjects/cwc_package
+
+dependency_overrides:
+#  flutter_inappwebview:
+#    git:
+#      url: https://github.com/vixez/flutter_inappwebview.git
+#      ref: fix-xcode-17
+  win32: ^5.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
